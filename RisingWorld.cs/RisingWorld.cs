@@ -61,7 +61,7 @@ namespace WindowsGSM.Plugins
             }
 
             StringBuilder param = new StringBuilder();
-            param.Append($" +server_name={serverData.ServerName}");
+            param.Append($" +server_name=\"{serverData.ServerName}\"");
             param.Append($" +Server_Port={serverData.ServerPort}");
             param.Append($" +Server_QueryPort={serverData.ServerQueryPort}");
             param.Append($" +Settings_MaxPlayers={serverData.ServerMaxPlayer}");
